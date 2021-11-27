@@ -1,0 +1,66 @@
+[package]
+name = "serum-common"
+version = "0.1.0"
+description = "Serum common utilities"
+repository = "https://github.com/project-serum/serum-dex"
+edition = "2018"
+
+[features]
+program = [ "spl-token/program", "solana-sdk/program", "solana-program" ]
+client = [
+  "spl-token/default",
+  "solana-sdk/default",
+  "solana-client",
+  "anyhow",
+  "rand",
+  "serde_json",
+  "bs58",
+  "bincode"
+]
+strict = [ ]
+devnet = [ ]
+default = [ ]
+
+[dependencies]
+arrayref = "0.3.6"
+serum-borsh = "0.8.1-serum.1"
+
+  [dependencies.serde]
+  version = "1.0"
+  features = [ "derive" ]
+
+  [dependencies.anyhow]
+  version = "1.0.32"
+  optional = true
+
+  [dependencies.rand]
+  version = "0.7.3"
+  optional = true
+
+  [dependencies.serde_json]
+  version = "1.0.56"
+  optional = true
+
+  [dependencies.bs58]
+  version = "0.3.1"
+  optional = true
+
+  [dependencies.bincode]
+  version = "1.3.1"
+  optional = true
+
+  [dependencies.safe-token]
+  default-features = false
+  path = "../../../../../../safecoin-program-library/token/program"
+
+  [dependencies.safecoin-sdk]
+  default-features = false
+  path = "../../../../../../Safecoin/sdk"
+
+  [dependencies.safecoin-program]
+  optional = true
+  path = "../../../../../../Safecoin/sdk/program"
+
+  [dependencies.safecoin-client]
+  optional = true
+  path = "../../../../../../Safecoin/client"

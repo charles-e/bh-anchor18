@@ -1,0 +1,22 @@
+[package]
+name = "serum-context"
+version = "0.1.0"
+description = "Serum Context"
+repository = "https://github.com/project-serum/serum-dex"
+edition = "2018"
+
+[dependencies]
+clap = "3.0.0-beta.1"
+anyhow = "1.0.32"
+dirs = "3.0"
+serde = "1.0"
+serde_yaml = "0.8"
+
+  [dependencies.serum-common]
+  path = "../common"
+
+  [dependencies.safecoin-sdk]
+  path = "../../../../../../Safecoin/sdk"
+
+  [dependencies.safecoin-client]
+  path = "../../../../../../Safecoin/client"

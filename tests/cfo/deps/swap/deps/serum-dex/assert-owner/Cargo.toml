@@ -1,0 +1,14 @@
+dev-dependencies = { }
+
+[package]
+name = "serum_assert_owner"
+version = "0.1.0"
+repository = "https://github.com/project-serum/serum-dex"
+edition = "2018"
+
+[dependencies.safecoin-program]
+path = "../../../../../../../../Safecoin/sdk/program"
+
+[lib]
+crate-type = [ "cdylib", "lib" ]
+name = "serum_assert_owner"

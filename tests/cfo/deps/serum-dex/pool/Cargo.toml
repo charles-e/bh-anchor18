@@ -1,0 +1,38 @@
+[package]
+name = "serum-pool"
+version = "0.1.0"
+description = "Solana pool spec"
+edition = "2018"
+
+[features]
+program = [ ]
+default = [ ]
+
+[dependencies]
+arrayref = "0.3.6"
+thiserror = "1.0.20"
+zerocopy = "0.3.0"
+bytemuck = "1.4.1"
+slice-of-array = "0.2.1"
+serum-borsh = "0.8.1-serum.1"
+hex = "0.4.2"
+base64 = "0.13.0"
+
+  [dependencies.serum-pool-schema]
+  version = "0.1.0"
+  path = "./schema"
+
+  [dependencies.anyhow]
+  version = "1.0.33"
+  default-features = false
+
+  [dependencies.safecoin-program]
+  path = "../../../../../../Safecoin/sdk/program"
+
+  [dependencies.safe-token]
+  features = [ "no-entrypoint" ]
+  path = "../../../../../../safecoin-program-library/token/program"
+
+[lib]
+name = "serum_pool"
+crate-type = [ "cdylib", "lib" ]

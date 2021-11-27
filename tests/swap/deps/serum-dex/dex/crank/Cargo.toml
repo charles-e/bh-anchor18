@@ -1,0 +1,48 @@
+[package]
+name = "crank"
+version = "0.2.0"
+edition = "2018"
+
+[[bin]]
+name = "crank"
+path = "src/bin/main.rs"
+
+[dependencies]
+clap = "3.0.0-beta.1"
+anyhow = "1.0.32"
+rand = "0.7.3"
+safe-transmute = "0.11.0"
+threadpool = "1.8.1"
+sloggers = "1.0"
+slog-scope = "4.3"
+slog-stdlog = "4"
+log = "0.4"
+debug_print = "1.0.0"
+warp = "0.2"
+
+  [dependencies.serum_dex]
+  path = "../"
+  default-features = false
+  features = [ "client" ]
+
+  [dependencies.serum-common]
+  path = "../../common"
+  features = [ "client" ]
+
+  [dependencies.serum-context]
+  path = "../../context"
+
+  [dependencies.tokio]
+  version = "0.2"
+  features = [ "full" ]
+
+  [dependencies.safe-token]
+  features = [ "no-entrypoint" ]
+  default-features = false
+  path = "../../../../../../../safecoin-program-library/token/program"
+
+  [dependencies.safecoin-client]
+  path = "../../../../../../../Safecoin/client"
+
+  [dependencies.safecoin-sdk]
+  path = "../../../../../../../Safecoin/sdk"

@@ -1,0 +1,42 @@
+[package]
+name = "cfo"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = [ "cdylib", "lib" ]
+name = "cfo"
+
+[features]
+no-entrypoint = [ ]
+no-idl = [ ]
+cpi = [ "no-entrypoint" ]
+default = [ "test" ]
+test = [ ]
+
+[dependencies.anchor-lang]
+path = "../../../../lang"
+
+[dependencies.anchor-spl]
+path = "../../../../spl"
+
+[dependencies.swap]
+path = "../../deps/swap/programs/swap"
+features = [ "cpi" ]
+
+[dependencies.serum_dex]
+path = "../../deps/serum-dex/dex"
+features = [ "no-entrypoint" ]
+
+[dependencies.registry]
+path = "../../deps/stake/programs/registry"
+features = [ "cpi" ]
+
+[dependencies.lockup]
+path = "../../deps/stake/programs/lockup"
+features = [ "cpi" ]
+
+[dependencies.safe-token]
+features = [ "no-entrypoint" ]
+path = "../../../../../safecoin-program-library/token/program"

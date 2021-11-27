@@ -1,0 +1,59 @@
+[package]
+name = "serum-cli"
+version = "0.1.0"
+authors = [ "armaniferrante <armaniferrante@gmail.com>" ]
+edition = "2018"
+
+[[bin]]
+name = "serum"
+path = "src/main.rs"
+
+[features]
+dev = [
+  "serum-common",
+  "serum_dex",
+  "solana-sdk",
+  "serde_json",
+  "spl-token",
+  "solana-client"
+]
+default = [ ]
+
+[dependencies]
+anyhow = "1.0.32"
+
+  [dependencies.clap]
+  version = "3.0.0-beta.2"
+  features = [ "yaml" ]
+
+  [dependencies.crank]
+  path = "../dex/crank"
+
+  [dependencies.serum-context]
+  path = "../context"
+
+  [dependencies.serum-common]
+  path = "../common"
+  optional = true
+
+  [dependencies.serum_dex]
+  path = "../dex"
+  default-features = false
+  features = [ "client" ]
+  optional = true
+
+  [dependencies.serde_json]
+  version = "1.0.59"
+  optional = true
+
+  [dependencies.safecoin-sdk]
+  optional = true
+  path = "../../../../../../Safecoin/sdk"
+
+  [dependencies.safe-token]
+  optional = true
+  path = "../../../../../../safecoin-program-library/token/program"
+
+  [dependencies.safecoin-client]
+  optional = true
+  path = "../../../../../../Safecoin/client"

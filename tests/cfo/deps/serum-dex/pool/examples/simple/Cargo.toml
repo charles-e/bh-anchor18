@@ -1,0 +1,21 @@
+[package]
+name = "serum-pool-simple"
+version = "0.1.0"
+description = "Simple serum pool"
+edition = "2018"
+
+[features]
+no-entrypoint = [ ]
+program = [ ]
+default = [ ]
+
+[dependencies.serum-pool]
+version = "0.1.0"
+path = "../.."
+
+[dependencies.safecoin-program]
+path = "../../../../../../../../Safecoin/sdk/program"
+
+[lib]
+name = "serum_pool_examples_simple"
+crate-type = [ "cdylib", "lib" ]
