@@ -12,7 +12,7 @@ default = [ ]
 serum-borsh = "0.8.1-serum.1"
 
   [dependencies.safecoin-program]
-  path = "../../../../../../../Safecoin/sdk/program"
+  version="1.7.17"
 
 [[bin]]
 name = "print-schema"

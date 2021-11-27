@@ -39,11 +39,11 @@ byteorder = "1.3.4"
   version = "1.4.0"
 
   [dependencies.safecoin-program]
-  path = "../../../../../../../../Safecoin/sdk/program"
+  version="1.7.17"
 
   [dependencies.safe-token]
   features = [ "no-entrypoint" ]
-  path = "../../../../../../../../safecoin-program-library/token/program"
+  version="3.2.0"
 
 [lib]
 crate-type = [ "cdylib", "lib" ]

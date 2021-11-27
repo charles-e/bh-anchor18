@@ -24,15 +24,15 @@ dex = [ ]
 
 
   [dependencies.safe-associated-token-account]
-  path = "../../safecoin-program-library/associated-token-account/program"
+  version="1.0.8"
   features = [ "no-entrypoint" ]
 
   [dependencies.safecoin-program]
-  path = "../../Safecoin/sdk/program"
+  version="1.7.17"
 
   [dependencies.safe-token]
   features = [ "no-entrypoint" ]
-  path = "../../safecoin-program-library/token/program"
+  version="3.2.0"
 
   [dependencies]
 lazy_static = "1.4.0"

@@ -17,11 +17,11 @@ serum-borsh = "0.8.1-serum.1"
   path = "../.."
 
   [dependencies.safecoin-program]
-  path = "../../../../../../../../../../Safecoin/sdk/program"
+  version="1.7.17"
 
   [dependencies.safe-token]
   features = [ "no-entrypoint" ]
-  path = "../../../../../../../../../../safecoin-program-library/token/program"
+  version="3.2.0"
 
 [lib]
 name = "serum_pool_examples_admin_controlled"

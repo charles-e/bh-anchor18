@@ -21,7 +21,7 @@ url = "2.2.2"
   features = [ "derive" ]
 
   [dependencies.safecoin-client]
-  path = "../../Safecoin/client"
+  version="1.7.17"
 
   [dependencies.safecoin-sdk]
-  path = "../../Safecoin/sdk"
+  version="1.7.17"

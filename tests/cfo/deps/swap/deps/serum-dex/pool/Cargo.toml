@@ -27,11 +27,11 @@ base64 = "0.13.0"
   default-features = false
 
   [dependencies.safecoin-program]
-  path = "../../../../../../../../Safecoin/sdk/program"
+  version="1.7.17"
 
   [dependencies.safe-token]
   features = [ "no-entrypoint" ]
-  path = "../../../../../../../../safecoin-program-library/token/program"
+  version="3.2.0"
 
 [lib]
 name = "serum_pool"

@@ -7,7 +7,7 @@ repository = "https://github.com/project-serum/serum-dex"
 edition = "2018"
 
 [dependencies.safecoin-program]
-path = "../../../../../../Safecoin/sdk/program"
+version="1.7.17"
 
 [lib]
 crate-type = [ "cdylib", "lib" ]

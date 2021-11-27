@@ -48,11 +48,11 @@ anyhow = "1.0.32"
 
   [dependencies.safecoin-sdk]
   optional = true
-  path = "../../../../../../Safecoin/sdk"
+  version="1.7.17"
 
   [dependencies.safe-token]
   optional = true
-  path = "../../../../../../safecoin-program-library/token/program"
+  version="3.2.0"
 
   [dependencies.safecoin-client]
   optional = true

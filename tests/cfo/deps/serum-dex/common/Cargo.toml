@@ -51,15 +51,15 @@ serum-borsh = "0.8.1-serum.1"
 
   [dependencies.safe-token]
   default-features = false
-  path = "../../../../../../safecoin-program-library/token/program"
+  version="3.2.0"
 
   [dependencies.safecoin-sdk]
   default-features = false
-  path = "../../../../../../Safecoin/sdk"
+  version="1.7.17"
 
   [dependencies.safecoin-program]
   optional = true
-  path = "../../../../../../Safecoin/sdk/program"
+  version="1.7.17"
 
   [dependencies.safecoin-client]
   optional = true

@@ -55,10 +55,10 @@ walkdir = "2"
   features = [ "multipart", "blocking" ]
 
   [dependencies.safecoin-sdk]
-  path = "../../Safecoin/sdk"
+  version="1.7.17"
 
   [dependencies.safecoin-program]
-  path = "../../Safecoin/sdk/program"
+  version="1.7.17"
 
   [dependencies.safecoin-client]
-  path = "../../Safecoin/client"
+  version="1.7.17"
