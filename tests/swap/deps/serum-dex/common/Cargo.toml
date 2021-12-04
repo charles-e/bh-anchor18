@@ -6,11 +6,15 @@ repository = "https://github.com/project-serum/serum-dex"
 edition = "2018"
 
 [features]
-program = [ "spl-token/program", "solana-sdk/program", "solana-program" ]
+program = [
+  "safe-token/program",
+  "safecoin-sdk/program",
+  "safecoin-program"
+]
 client = [
-  "spl-token/default",
-  "solana-sdk/default",
-  "solana-client",
+  "Safecoin-token/default",
+  "safecoin-sdk/default",
+  "safecoin-client",
   "anyhow",
   "rand",
   "serde_json",
@@ -51,16 +55,15 @@ serum-borsh = "0.8.1-serum.1"
 
   [dependencies.safe-token]
   default-features = false
-  version="3.2.0"
+  path = "../../../../../../safecoin-program-library/token/program"
 
   [dependencies.safecoin-sdk]
   default-features = false
-  version="1.7.17"
+  path = "../../../../../../Safecoin/sdk"
 
   [dependencies.safecoin-program]
   optional = true
-  version="1.7.17"
+  path = "../../../../../../Safecoin/sdk/program"
 
   [dependencies.safecoin-client]
-  optional = true
   path = "../../../../../../Safecoin/client"

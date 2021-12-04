@@ -10,7 +10,8 @@ description = "CPI clients for SPL programs"
 devnet = [ ]
 dex = [ ]
 
-
+[dependencies]
+lazy_static = "1.4.0"
 
   [dependencies.anchor-lang]
   path = "../lang"
@@ -18,21 +19,17 @@ dex = [ ]
   features = [ "derive" ]
 
   [dependencies.serum_dex_0_4_0]
-  path ="../../serum-dex-0.4.0"
+  path = "../../serum-dex-0.4.0"
   version = "0.4.0"
   features = [ "no-entrypoint" ]
 
-
   [dependencies.safe-associated-token-account]
-  version="1.0.8"
+  path = "../../safecoin-program-library/associated-token-account/program"
   features = [ "no-entrypoint" ]
 
   [dependencies.safecoin-program]
-  version="1.7.17"
+  path = "../../Safecoin/sdk/program"
 
   [dependencies.safe-token]
   features = [ "no-entrypoint" ]
-  version="3.2.0"
-
-  [dependencies]
-lazy_static = "1.4.0"
+  path = "../../safecoin-program-library/token/program"

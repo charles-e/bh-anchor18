@@ -23,4 +23,4 @@ path = "../lockup"
 features = [ "cpi" ]
 
 [dependencies.safecoin-program]
-version="1.7.17"
+path = "../../../../../../../Safecoin/sdk/program"

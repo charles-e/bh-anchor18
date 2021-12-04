@@ -12,10 +12,10 @@ path = "src/main.rs"
 dev = [
   "serum-common",
   "serum_dex",
-  "solana-sdk",
+  "safecoin-sdk",
   "serde_json",
-  "spl-token",
-  "solana-client"
+  "safe-token",
+  "safecoin-client"
 ]
 default = [ ]
 
@@ -48,12 +48,11 @@ anyhow = "1.0.32"
 
   [dependencies.safecoin-sdk]
   optional = true
-  version="1.7.17"
+  path = "../../../../../../Safecoin/sdk"
 
   [dependencies.safe-token]
   optional = true
-  version="3.2.0"
+  path = "../../../../../../safecoin-program-library/token/program"
 
   [dependencies.safecoin-client]
-  optional = true
   path = "../../../../../../Safecoin/client"

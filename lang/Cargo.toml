@@ -61,4 +61,4 @@ thiserror = "1.0.20"
   version = "0.18.0"
 
   [dependencies.safecoin-program]
-  version="1.7.17"
+  path = "../../Safecoin/sdk/program"

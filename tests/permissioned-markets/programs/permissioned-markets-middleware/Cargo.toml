@@ -21,4 +21,4 @@ path = "../../../../lang"
 path = "../../../../spl"
 
 [dependencies.safecoin-program]
-version="1.7.17"
+path = "../../../../../Safecoin/sdk/program"

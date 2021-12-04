@@ -39,10 +39,10 @@ warp = "0.2"
   [dependencies.safe-token]
   features = [ "no-entrypoint" ]
   default-features = false
-  version="3.2.0"
+  path = "../../../../../../../safecoin-program-library/token/program"
 
   [dependencies.safecoin-client]
   path = "../../../../../../../Safecoin/client"
 
   [dependencies.safecoin-sdk]
-  version="1.7.17"
+  path = "../../../../../../../Safecoin/sdk"

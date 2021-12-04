@@ -14,7 +14,7 @@ version = "0.1.0"
 path = "../.."
 
 [dependencies.safecoin-program]
-version="1.7.17"
+path = "../../../../../../../../Safecoin/sdk/program"
 
 [lib]
 name = "serum_pool_examples_simple"
