@@ -24,7 +24,7 @@ export const createPriceFeed = async ({
   expo = -4,
 }: ICreatePriceFeed) => {
   const conf = confidence || new BN((initPrice / 10) * 10 ** -expo)
-  const collateralTokenFeed = new web3.Account()
+  const collateralTokenFeed = new web3.Keypair()
   await oracleProgram.rpc.initialize(new BN(initPrice * 10 ** -expo), expo, conf, {
     accounts: { price: collateralTokenFeed.publicKey },
     signers: [collateralTokenFeed],
@@ -120,7 +120,7 @@ export const parsePriceData = (data: Buffer) => {
   const magic = data.readUInt32LE(0)
   // Program version.
   const version = data.readUInt32LE(4)
-  // Account type.
+  // Keypair type.
   const type = data.readUInt32LE(8)
   // Price account size.
   const size = data.readUInt32LE(12)
@@ -222,7 +222,7 @@ export const parseProductData = (data: Buffer) => {
   const magic = data.readUInt32LE(0)
   // Program version.
   const version = data.readUInt32LE(4)
-  // Account type.
+  // Keypair type.
   const type = data.readUInt32LE(8)
   // Price account size.
   const size = data.readUInt32LE(12)

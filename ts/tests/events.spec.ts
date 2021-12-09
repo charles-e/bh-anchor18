@@ -1,4 +1,4 @@
-import { PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@safecoin/web3.js";
 import { EventParser } from "../src/program/event";
 import { Coder } from "../src";
 

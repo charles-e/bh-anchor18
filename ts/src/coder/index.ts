@@ -21,7 +21,7 @@ export default class Coder<A extends string = string> {
   readonly instruction: InstructionCoder;
 
   /**
-   * Account coder.
+   * Keypair coder.
    */
   readonly accounts: AccountsCoder<A>;
 

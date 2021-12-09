@@ -1,4 +1,4 @@
-import { PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@safecoin/web3.js";
 import * as borsh from "@project-serum/borsh";
 
 export type Idl = {

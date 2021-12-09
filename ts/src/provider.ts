@@ -10,7 +10,7 @@ import {
   RpcResponseAndContext,
   SimulatedTransactionResponse,
   Commitment,
-} from "@solana/web3.js";
+} from "@safecoin/web3.js";
 import { isBrowser } from "./utils/common";
 
 /**

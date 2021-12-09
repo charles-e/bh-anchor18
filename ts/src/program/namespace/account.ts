@@ -8,7 +8,7 @@ import {
   TransactionInstruction,
   Commitment,
   GetProgramAccountsFilter,
-} from "@solana/web3.js";
+} from "@safecoin/web3.js";
 import Provider from "../../provider";
 import { Idl, IdlTypeDef } from "../../idl";
 import Coder, {
@@ -165,7 +165,7 @@ export class AccountClient<
   async fetch(address: Address): Promise<T> {
     const data = await this.fetchNullable(address);
     if (data === null) {
-      throw new Error(`Account does not exist ${address.toString()}`);
+      throw new Error(`Keypair does not exist ${address.toString()}`);
     }
     return data;
   }

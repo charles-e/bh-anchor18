@@ -1,5 +1,5 @@
 export { default as BN } from "bn.js";
-export * as web3 from "@solana/web3.js";
+export * as web3 from "@safecoin/web3.js";
 export {
   default as Provider,
   getProvider,

@@ -14,7 +14,7 @@ import {
 } from "../idl";
 import { IdlCoder } from "./idl";
 import { sighash } from "./common";
-import { AccountMeta, PublicKey } from "@solana/web3.js";
+import { AccountMeta, PublicKey } from "@safecoin/web3.js";
 
 /**
  * Namespace for state method function signatures.

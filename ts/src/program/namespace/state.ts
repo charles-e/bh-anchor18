@@ -5,7 +5,7 @@ import {
   SystemProgram,
   Commitment,
   AccountMeta,
-} from "@solana/web3.js";
+} from "@safecoin/web3.js";
 import Provider from "../../provider";
 import {
   Idl,
@@ -161,7 +161,7 @@ export class StateClient<IDL extends Idl> {
     const addr = this.address();
     const accountInfo = await this.provider.connection.getAccountInfo(addr);
     if (accountInfo === null) {
-      throw new Error(`Account does not exist ${addr.toString()}`);
+      throw new Error(`Keypair does not exist ${addr.toString()}`);
     }
     // Assert the account discriminator is correct.
     const state = this._idl.state;

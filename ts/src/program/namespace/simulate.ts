@@ -2,7 +2,7 @@ import {
   PublicKey,
   RpcResponseAndContext,
   SimulatedTransactionResponse,
-} from "@solana/web3.js";
+} from "@safecoin/web3.js";
 import Provider from "../../provider";
 import { splitArgsAndCtx } from "../context";
 import { TransactionFn } from "./transaction";

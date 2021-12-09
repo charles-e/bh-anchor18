@@ -1,5 +1,5 @@
 import { inflate } from "pako";
-import { PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@safecoin/web3.js";
 import Provider from "../provider";
 import { Idl, idlAddress, decodeIdlAccount } from "../idl";
 import Coder from "../coder";

@@ -3,7 +3,7 @@ import {
   Signer,
   ConfirmOptions,
   TransactionInstruction,
-} from "@solana/web3.js";
+} from "@safecoin/web3.js";
 import { Address } from "./common";
 import { IdlAccountItem, IdlAccounts, IdlInstruction } from "../idl";
 
@@ -56,10 +56,10 @@ export type Context<A extends Accounts = Accounts> = {
  * nested here.
  */
 export type Accounts<A extends IdlAccountItem = IdlAccountItem> = {
-  [N in A["name"]]: Account<A & { name: N }>;
+  [N in A["name"]]: Keypair<A & { name: N }>;
 };
 
-type Account<A extends IdlAccountItem> = A extends IdlAccounts
+type Keypair<A extends IdlAccountItem> = A extends IdlAccounts
   ? Accounts<A["accounts"][number]>
   : Address;
 
