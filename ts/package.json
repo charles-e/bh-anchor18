@@ -34,7 +34,7 @@
     "@project-serum/borsh": "file:../../serum-ts/packages/borsh",
     "@safecoin/web3.js": "^1.29.3",
     "base64-js": "^1.5.1",
-    "bn.js": "^5.1.2",
+    "bn.js": "^5.2.0",
     "bs58": "^4.0.1",
     "buffer-layout": "^1.2.0",
     "camelcase": "^5.3.1",
