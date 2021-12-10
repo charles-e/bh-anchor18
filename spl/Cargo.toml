@@ -18,7 +18,7 @@ dex = [ ]
   features = [ "derive" ]
 
   [dependencies.serum_dex_0_4_0]
-  path ="../../serum-dex-0.4.0"
+  path ="../../bh-serum-0.4.0"
   version = "0.4.0"
   features = [ "no-entrypoint" ]
 
